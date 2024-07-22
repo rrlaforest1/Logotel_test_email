@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: #fff;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            display: block;
+            border: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        /*
+        Section 1
+        */
+
+        .header-logo {
+            width: 40%;
+        }
+
+        .section-1 h1 {
+            font-size: 40px;
+        }
+
+        .section-1 p {
+            font-size: 20px;
+        }
+
+        .section-1 a {
+            font-size: 20px;
+        }
+
+
+        /*
+        Section 2
+        */
+
+        .table-section-2 {
+            border-collapse: initial;
+            border-spacing: 0 50px;
+        }
+
+
+        .section-2 td {
+            text-align: center;
+        }
+
+
+        .section-2 .vertical-image {
+            width: 60%;
+            max-width: 200px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .section-2 .horizontal-image {
+            display: none;
+        }
+
+
+        .section-2 h2 {
+            color: #272727;
+            text-align: left;
+            font-weight: 700;
+        }
+
+
+        .section-2 p {
+            color: #272727;
+            text-align: left;
+            margin: 30px 0 10px 0;
+        }
+
+
+        .section-2 a {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: right;
+
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+
+        /*
+    Responsive for bigger screens
+    */
+
+        @media screen and (min-width: 450px) {
+
+            .section-2 td {
+                padding: 0;
+            }
+
+
+            .section-2 img.vertical-image {
+                display: none;
+            }
+
+            .section-2 .horizontal-image {
+                display: block;
+                margin-right: 50px;
+            }
+
+            .section-2 .horizontal-image img {
+                max-width: 150px;
+                ;
+            }
+
+            .section-2 .horizontal-image.right {
+                margin-right: 0;
+                margin-left: 50px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <table class="email-container" width="100%" cellpadding="0" cellspacing="0"
+        style="max-width: 600px;margin: 0 auto;background-color: #ffffff;">
+
+        <!-- Hidden Preheader Text →<div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family:sans-serif;">  An email for the technical test for the interviewing process      </div><!-- Hidden Preheader Text - END -->
+
+
+        <!-- Header style="background: url('./images/color_waves/onda-bianco-grigio.png');background-size:contain; background-repeat: no-repeat;"-->
+        <tr>
+            <td class="email-header" style="text-align: right;">
+                <img class="header-logo" src="./images/logo/logo_black.png" alt="Logo"
+                    style="margin: 30px 30px -50px 0; background-size:contain; background-repeat: no-repeat;"
+                    align="right">
+                <img src="./images/color_waves/onda-bianco-grigio.png" alt="Logo" width="100%"
+                    style="margin-bottom: -3px;">
+            </td>
+        </tr>
+        <!-- Section 1 - Black box with CTA -->
+        <tr>
+            <td class="section-1" style="padding: 30px; background-color: #272727; color: #ffffff;">
+                <h1 style="color: #f07c79;">Sed diam nonummy nibh euismod tincidunt?</h1>
+                <p style=" margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque sit amet
+                    accumsan arcu.</p>
+                <a href="https://www.google.it" target="_blank" class="call-to-action"
+                    style="background-color: #f07c79; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 10px; display: inline-block; margin-top: 40px;">CALL
+                    TO ACTION</a>
+            </td>
+        </tr>
+        <!-- Section 2 - Tabs -->
+        <tr>
+            <td class="section-2" style="background-color: #ffffff; padding: 0 40px;">
+                <table class="table-section-2" width="100%" cellspacing="40px">
+
+                    <tr>
+                        <td class="horizontal-image">
+                            <img src="./images/tabs/sveglia.png" alt="Feature Image">
+                        </td>
+                        <td>
+                            <img class="vertical-image" src="./images/tabs/sveglia.png" alt="Feature Image">
+                            <h2 style="color:#ed6562;">Lorem Ipsum</h2>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper.</p>
+                            <a href="https://www.ecosia.org" target="_blank" style="color:#ed6562;">read more</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="vertical-image" src="./images/tabs/razzo.png" alt="Feature Image">
+                            <h2 style="color:#28afb0;">Lorem Ipsum</h2>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper.</p>
+                            <a href="https://www.ecosia.org" target="_blank" style="color:#28afb0;">read more</a>
+                        </td>
+                        <td class="horizontal-image right">
+                            <img src="./images/tabs/razzo.png" alt="Feature Image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="horizontal-image">
+                            <img src="./images/tabs/target.png" alt="Feature Image">
+                        </td>
+                        <td>
+                            <img class="vertical-image" src="./images/tabs/target.png" alt="Feature Image">
+                            <h2 style="color:#e2ca40;">Lorem Ipsum</h2>
+                            <p>Lorem quam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper.</p>
+                            <a href="https://www.ecosia.org" target="_blank" style="color:#e2ca40;">read more</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Footer Section -->
+        <tr>
+            <td class="email-footer" style="background-color: #272727; padding: 30px;">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="footer-logo" align="center">
+                            <img src=" ./images/logo/logo_icon.png" width="50px" alt="Logo"
+                                style="margin-bottom: 20px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="social-icons" align="center">
+                            <a href="https://www.ecosia.org" target="_blank"><img src="./images/social/FB.png"
+                                    alt="Facebook"></a>
+                            <a href="https://www.ecosia.org" target="_blank"><img src="./images/social/TW.png"
+                                    alt="Twitter"></a>
+                            <a href="https://www.ecosia.org" target="_blank"><img src="./images/social/IG.png"
+                                    alt="Instagram"></a>
+                            <a href="https://www.ecosia.org" target="_blank"><img src="./images/social/LI.png"
+                                    alt="LinkedIn"></a>
+                            <a href="https://www.ecosia.org" target="_blank"><img src="./images/social/YT.png"
+                                    alt="YouTube"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p style="color:#ffffff; line-height: 20px; font-size: 10px;"><a href="#">Cancella
+                                    iscrizione</a> | <a href="#">Condizioni di
+                                    utilizzo</a> | <a href="#">Privacy</a> | <a href="#">Centro assistenza</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
